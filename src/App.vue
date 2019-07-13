@@ -1,18 +1,108 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-app>
+      <main>
+        <v-toolbar
+          fixed
+          class="elevation-0"
+          color="white"
+          style="padding:15px 0 0  50px;"
+        >
+          <v-toolbar-title>
+            <!-- <v-btn
+              to="/"
+              flat
+              class="green--text"
+            > -->
+            <img
+              width="150px"
+              src="./assets/Gbook_combo.png"
+            >
+            <!-- </v-btn> -->
+          </v-toolbar-title>
+          <v-spacer />
+          <!-- <v-btn
+            to="/"
+            dark
+            tile
+            flat
+            color="green lighten-1"
+          >
+            Home
+          </v-btn>
+          <v-btn
+            to="/books"
+            dark
+            tile
+            flat
+            color="green lighten-1"
+          >
+            Books
+          </v-btn>
+          <v-btn
+            to="/about"
+            dark
+            tile
+            flat
+            color="green lighten-1"
+          >
+            About
+          </v-btn> -->
+        </v-toolbar>
+        <router-view />
+        <v-footer
+          dark
+          height="auto"
+          xs10
+        >
+          <v-flex md12>
+            <v-card
+              flat
+              tile
+              class=" text-xs-center"
+              color="rgb(120, 194, 23)"
+            >
+              <v-card-text>
+                <v-btn
+                  href="https://github.com/AliasAJ"
+                  icon
+                >
+                  <v-icon
+                    size="30px"
+                  >
+                    fab fa-github
+                  </v-icon>
+                </v-btn>
+                <v-btn
+                  href="https://www.linkedin.com/in/arthurbatesjr/"
+                  icon
+                >
+                  <v-icon size="30px">
+                    fab fa-linkedin
+                  </v-icon>
+                </v-btn>
+              </v-card-text>
+              <v-card-text class=" body-2 black--text">
+                &copy;2019 — <strong>Arthur Bates, Jr.</strong>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+        </v-footer>
+      </main>
+    </v-app>
   </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import Search from './components/Search.vue'
+// import About from './components/About.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
-  }
+  },
 }
 </script>
 
